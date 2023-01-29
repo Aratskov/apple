@@ -46,12 +46,6 @@ h1, h2, h3, h4, h5, h6, p {
     padding-bottom: 100px;
   }
 }
-@media screen and (min-width: 1280px) {
-  .section {
-    padding-top: 120px;
-    padding-bottom: 120px;
-  }
-}
 
 .favorits {
   display: flex;
