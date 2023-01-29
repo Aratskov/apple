@@ -1,0 +1,286 @@
+// .copy{
+// // position: relative;
+// background-image: url(../images/Rectangle.jpg);
+// height: 400px;
+// max-width: 1900px;
+// background-repeat: no-repeat;
+// background-size: cover;
+// }
+
+// .circe{
+// // position: absolute;
+// // bottom: 67px;
+// // left: 40px;
+// height: 200px;
+// width: 200px;
+// // border-radius: 50%;
+// background-image: url(../images/aple.png),#FEFEFE;;
+// // background-color: #FEFEFE;
+// background-repeat:no-repeat ;
+// background-size: 90%, auto;
+// background-position: center bottom 30px,auto;
+// }
+
+.container{
+padding-left: 15px;
+padding-right: 15px;
+}
+
+.footer{
+    
+    max-width: 480px;
+
+    @media screen and (min-width:320px) {
+        margin: 0 auto;
+    background-image: url(../images/footer-320.jpg);
+    padding-top: 60px;
+    padding-bottom: 60px;
+    
+    background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+
+}
+
+@media screen and (min-width:768px) {
+    background-image: url(../images/apple-tab.jpg);
+    max-width: 768px;
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+
+@media screen and (min-width:1268px) {
+    background-image: url(../images/apple-des.jpg);
+    max-width: 1900px;
+    background-size: contain;
+}
+
+}
+
+.text{
+    text-align: center;
+font-size: 10px;
+    line-height: 12px;
+    /* identical to box height */
+
+
+    color: #2C2C2C;
+    margin: 0;
+
+    @media screen and (min-width:768px) {
+            font-size: 12px;
+            line-height: 14px;
+        }
+
+}
+
+
+.contact{
+display: flex;
+padding: 0;
+margin: 0;
+margin-bottom: 40px;
+
+@media screen and (max-width:767px){
+justify-content: space-between;
+margin-bottom: 40px;
+}
+
+&__item{
+list-style: none;
+}
+
+&__link{
+    font-size: 10px;
+    line-height: 12px;
+    text-decoration-line: underline;
+    color: #7EB101;
+
+    @media screen and (min-width:768px) {
+        font-size: 12px;
+            line-height: 14px;
+    }
+
+
+}
+
+@media screen and (min-width:768px) {
+    gap: 20px;
+    flex-grow: 1;
+}
+}
+
+.nav{
+display: flex;
+flex-direction: column;
+align-items: center;
+flex-grow: 1;
+gap: 20px;
+padding: 0;
+margin: 0;
+list-style: none;
+
+    &__item{
+        display: block;
+    }
+
+    &__link{
+    text-decoration: none;
+    font-size: 14px;
+    line-height: 16px;
+    color: #000000;
+    }
+
+    @media screen and (min-width:768px) {
+        flex-direction: row;
+    }
+
+
+}
+
+.navigation{
+display: flex;
+align-items: center;
+
+@media screen and (max-width:1267px) {
+    justify-content: space-between;
+        margin-bottom: 40px;
+}
+
+
+
+
+}
+
+.title{
+    display: block;
+font-weight: 500;
+    font-size: 14px;
+    line-height: 150%;
+    /* identical to box height, or 21px */
+
+
+    color: #2C2C2C;
+    margin-bottom: 12px;
+}
+
+.form{
+@media screen and (min-width:768px) {
+    display: flex;
+    gap: 13px;
+    margin-bottom: 12px;
+
+}
+}
+
+.form__input{
+    box-sizing: border-box;
+height: 42px;
+width: 100%;
+border: 0.854167px solid #FFE550;
+    border-radius: 30px;
+    padding: 12px;
+    background-color: transparent;
+    outline: transparent;
+    
+
+    &::placeholder{
+    font-size: 12px;
+    line-height: 150%;
+    color: #505050;
+    }
+
+    &:not(:placeholder-shown):valid{
+    border-color: #7EB101;
+    }
+
+    &:not(:placeholder-shown):invalid{
+    border-color: red;
+    }
+
+    @media screen and (min-width:768px) {
+        width: 279px;
+    }
+
+    
+}
+
+.form__button{
+    display: block;
+    margin-left: auto;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    min-width: 103px;
+    height: 42px;
+
+    font-weight: 500;
+    font-size: 13px;
+    line-height: 150%;
+    color: #2C2C2C;
+    
+    background: #FFFFFF;
+    border: 0.854167px solid #7EB101;
+    border-radius: 30px;
+
+    @media screen and (min-width:768px) {
+        margin: 0;
+    }
+}
+
+.tiket{
+    font-size: 10px;
+    line-height: 12px;
+    color: #2C2C2C;
+
+    @media screen and (min-width:768px) {
+            font-size: 12px;
+            line-height: 14px;
+        }
+
+    @media screen and (max-width:1267px) {
+        margin-bottom: 60px;
+    }
+}
+
+.tiket-second{
+text-decoration-line: underline;
+
+    /* Dark green */
+
+    color: #7EB101;
+}
+
+.logo{
+@media screen and (min-width:768px) {
+    margin-right: 114px;
+}
+
+@media screen and (min-width:1268px) {
+    margin-right: 148px;
+}
+}
+
+.cont{
+display: flex;
+
+@media screen and (max-width:767px) {
+    flex-direction: column;
+}
+}
+
+.auto{
+display: flex;
+flex-direction: column;
+
+@media screen and (min-width:1268px) {
+ flex-direction: row;
+ align-items: flex-start;
+ margin-bottom: 80px;
+}
+}
+
+.div{
+@media screen and (min-width:1268px) {
+    margin-left: auto;
+}
+}
