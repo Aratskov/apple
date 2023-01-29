@@ -27,12 +27,10 @@ display: none;
 &__img{
     box-sizing: border-box;
     padding: 24px;
-width: 350px;
-height: 350px;
-background-color: transparent;
-border-radius: 50%;
-border: 16px solid #FFE550;
-transition: border-color 250ms linear;
+    border-radius: 50%;
+    border: 16px solid #FFE550;
+    transition: border-color 250ms linear;
+    
 
 
 &:hover,&:focus{
