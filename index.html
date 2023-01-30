@@ -76,93 +76,132 @@
               Lorem ipsum dolor sit amet, consectetur adipiscing elit.
             </p>
 
-            <div class="card">
-              <div class="star-rating">
-                <input type="radio" name="stars" id="star-a" value="5" />
-                <label for="star-a"></label>
-
-                <input type="radio" name="stars" id="star-b" value="4" />
-                <label for="star-b"></label>
-
-                <input type="radio" name="stars" id="star-c" value="3" />
-                <label for="star-c"></label>
-
-                <input type="radio" name="stars" id="star-d" value="2" />
-                <label for="star-d"></label>
-
-                <input type="radio" name="stars" id="star-e" value="1" />
-                <label for="star-e"></label>
-              </div>
-            </div>
-
-            <ul class="reviers list">
-              <li class="reviers__item">
-                <p class="reviers__text">
-                  “The Best app I have used to order food in a while, so many
-                  options to choose from too, I would recommend to a freind, No
-                  questions asked”
-                </p>
-              </li>
-              <li class="reviers__item">
-                <p class="reviers__text">
-                  “The ease with which I can just go in and order what i want
-                  was amazing, It has been a very pleasant experience ordering
-                  from this app”
-                </p>
-              </li>
-            </ul>
-          </div>
-
-          <div class="subscribe">
-            <label class="label-test">
-              <input
-                type="range"
-                name="interest_rate"
-                value="40"
-                class="input-test"
-                min="0"
-                max="100"
-                step="20"
-              />
-            </label>
-          </div>
-          <div class="rating">
+            <div class="customers-wrap">
+              <div class="card">
+              <div class="rating">
             <input
               type="radio"
               name="any_name"
               value="5"
               id="sel-rating-5"
-              class="inputin"
-            /><label for="sel-rating-5" class="labelin">&#9733</label>
+              class="rating__input"
+            /><label for="sel-rating-5" class="rating__label">&#9733</label>
             <input
               type="radio"
               name="any_name"
               value="4"
               id="sel-rating-4"
               checked
-              class="inputin"
-            /><label for="sel-rating-4" class="labelin">&#9733</label>
+              class="rating__input"
+            /><label for="sel-rating-4" class="rating__label">&#9733</label>
             <input
               type="radio"
               name="any_name"
               value="3"
               id="sel-rating-3"
-              class="inputin"
-            /><label for="sel-rating-3" class="labelin">&#9733</label>
+              class="rating__input"
+            /><label for="sel-rating-3" class="rating__label">&#9733</label>
             <input
               type="radio"
               name="any_name"
               value="2"
               id="sel-rating-2"
-              class="inputin"
-            /><label for="sel-rating-2" class="labelin">&#9733</label>
+              class="rating__input"
+            /><label for="sel-rating-2" class="rating__label">&#9733</label>
             <input
               type="radio"
               name="any_name"
               value="1"
               id="sel-rating-1"
-              class="inputin"
-            /><label for="sel-rating-1" class="labelin">&#9733</label>
+              class="rating__input"
+            /><label for="sel-rating-1" class="rating__label">&#9733</label>
+          </div>
+           <p class="card-text">
+                  “The Best app I have used to order food in a while, so many
+                  options to choose from too, I would recommend to a freind, No
+                  questions asked”
+                </p>
+                <div class="card-wrap">
+                  <img src="./images/man-1x.png" class="card-img" alt="men photo">
+                  <div class="wrap-name">
+                    <h3 class="card-name">Sumith Shah</h3>
+                  <p class="card-job">Some Dude</p>
+                  </div>
+                </div>
+            </div>
+
+            <div class="card">
+              <div class="rating">
+            <input
+              type="radio"
+              name="any_name_w"
+              value="5"
+              id="sel-rating--5"
+              class="rating__input"
+              checked
+            /><label for="sel-rating--5" class="rating__label">&#9733</label>
+            <input
+              type="radio"
+              name="any_name_w"
+              value="4"
+              id="sel-rating--4"
+              class="rating__input"
+            /><label for="sel-rating--4" class="rating__label">&#9733</label>
+            <input
+              type="radio"
+              name="any_name_w"
+              value="3"
+              id="sel-rating--3"
+              class="rating__input"
+            /><label for="sel-rating--3" class="rating__label">&#9733</label>
+            <input
+              type="radio"
+              name="any_name_w"
+              value="2"
+              id="sel-rating--2"
+              class="rating__input"
+            /><label for="sel-rating--2" class="rating__label">&#9733</label>
+            <input
+              type="radio"
+              name="any_name_w"
+              value="1"
+              id="sel-rating--1"
+              class="rating__input"
+            /><label for="sel-rating--1" class="rating__label">&#9733</label>
+          </div>
+           <p class="card-text">
+                  “The ease with which I can just go in and order what i want
+                  was amazing, It has been a very pleasant experience ordering
+                  from this app”
+                </p>
+                <div class="card-wrap">
+                  <img src="./images/women-1x.png" class="card-img" alt="women photo">
+                  <div class="wrap-name">
+                    <h3 class="card-name">Sumith Shah</h3>
+                  <p class="card-job">Some Dude</p>
+                  </div>
+                </div>
+            </div>
+            </div>
+          </div>
+
+          <div class="subscribe">
+            <h2 class="subscribe-title">Subscribe To Get Special Offers</h2>
+            <p class="subscribe-title-after">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique.
+            </p>
+
+            <form class="form" autocomplete="off">
+                <label class="form__label">
+                  <input
+                    type="email"
+                    name="form"
+                    class="form__input--sub"
+                    placeholder="Enter your email"
+                  />
+                </label>
+                <button type="submit" class="form__button--sub">Subscribe</button>
+              </form>
           </div>
         </div>
       </section>
