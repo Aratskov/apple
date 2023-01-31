@@ -5,17 +5,79 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>FoodSta</title>
     <link rel="icon" type="image/svg" href="./images/favicon.svg.svg" >
-    <link rel="stylesheet" href="./css/main.min.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap"
-      rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap"
+    rel="stylesheet"
     />
     <script type="module" src="./index.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="./css/main.min.css" />
   </head>
   <body>
     <main>
+      <section class="slider">
+        <div class="container container-wrap">
+
+         <div class="wrap-hero">
+           <h1 class="title-hero">Enjoy Your Favorite Food From Anywhere</h1>
+           <p class="hero-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique. Duis cursus, mi quis viverra ornare, eros dolor interdum nulla, ut commodo diam libero vitae erat.</p>
+            <button type="button" class="hero-btn">Order Now</button>
+          </div>
+
+         <div class="rembo">
+           <div class="wrap-slider">
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+          <div class="swiper mySwiper wrap-picture">
+            <ul class="swiper-wrapper list">
+              <li class="swiper-slide slider-item"><img src="./images/falafel-desk-1x.png" alt="falafel" class="slider-img"></li>
+              <li class="swiper-slide slider-item"><img src="./images/salat-desk-1x.png" alt="falafel" class="slider-img"></li>
+              <li class="swiper-slide slider-item"><img src="./images/pizza-desk-1x.png" alt="falafel" class="slider-img"></li>
+            </ul>
+          </div>
+        </div>
+         </div>
+        </div>
+      </section>
+
+      <section class="offerings">
+        <div class="container container-offerings">
+         <div class="wrapper-offerings">
+           <div class="wrap-pictures">
+            <picture class="picture-benefits"> 
+            <source srcset="./images/apple-desk-1x.png 1x, 
+            /team-azov/falafel-desk-2x.a6b1ecf0.png" media="(min-width: 1280px)"> 
+            <source srcset="./images/falafel-tab-1x.png 1x, 
+            /team-azov/falafel-tab-2x.c653d99e.png" media="(min-width: 768px)"> 
+            <img class="hero__image" src="/team-azov/falafel-desk-1x.a1b61aa2.png" width="392" alt="Falafel"> 
+          </picture>
+           </div>
+           <div class="wrap-content">
+        <h2 class="offerings-title">What’s Special About Our Offerings</h2>
+        <p class="offerings-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique. Duis cursus, mi quis viverra ornare, eros dolor interdum nulla, ut commodo diam libero vitae erat.</p>
+        </div>
+
+        <div class="wrap-benefits">
+
+
+          <ul class="benefits list">
+            <li class="benefits__item">
+              <h3 class="benefits__title">Fasest Delivery</h3>
+              <p class="benefits__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros.</p>
+            </li>
+            <li class="benefits__item">
+              <h3 class="benefits__title">Easy to order</h3>
+              <p class="benefits__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros.</p>
+            </li>
+          </ul>
+        </div>
+        <button type="button" class="benefits-btn">Order Now</button>
+         </div>
+        </div>
+      </section>
+
       <section class="section">
         <div class="container">
           <h2 class="favorits-title">Some of Our Favorites</h2>
@@ -277,5 +339,23 @@
         </section>
       </div>
     </footer>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+
+  <!-- Initialize Swiper -->
+  <script>
+    var swiper = new Swiper(".mySwiper", {
+      loop:true,
+      autoplay:{
+          delay: 20000,
+        },
+        keyboard: {
+    enabled: true,
+        },
+      navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+      },
+    });
+  </script>
   </body>
 </html>
