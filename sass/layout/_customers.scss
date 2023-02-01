@@ -2,7 +2,7 @@
     max-width: 1600px;
     background-image:url(../images/banana-mob-1x.png),url(../images/bg-custom/bg-cust-320-1x-min.png);
     background-repeat: no-repeat;
-    // background-size:auto, 100%;
+    background-size:auto, 100%;
     background-position: bottom 375px center,center top;
 
     @include mobile{
